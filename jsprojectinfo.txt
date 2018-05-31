@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww16220\viewh16180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 JCH Javascript project outline:\
+	Rain: Completed 13 May 2018	\
+		Desc: An infinite looping of rain.\
+		New Skills Learned:\
+			Canvas properties\
+			Canvas Resizing / Properties based on size\
+			JS Objects\
+			JS Functions\
+			Arrays\
+			Random Number Generation\
+			Gravity simulation (rain acceleration)\
+			Using array.push\
+			Audio in HTML \
+			Loops\
+	Space: Completed 21 May 2018\
+		Desc: A satellite orbitting a planet with changing stars in the background\
+		New Skills Learned:\
+			Multiple draw functions \
+			Layering (stars appear behind planet and satellite)\
+			Canvas paths using lineTo\
+			JS trigonometry (sine / cosine)\
+			Using canvas.width and canvas.height\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 			Simulating two dimensional (xy) motion \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 	Cannon: Completed 27 May 2018\
+		Desc: A cannon that is fired by the user by clicking\
+		New Skills Learned:\
+			Using mouse and click event listeners to add interactability\
+			Removing elements from an array using array.splice\
+			"Bouncing" an object with friction and gravity\
+			\
+			}
