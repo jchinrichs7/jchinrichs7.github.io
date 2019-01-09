@@ -18,15 +18,12 @@ var colorArray = [
 
  ];
 
-
 window.addEventListener('resize', function() {
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight;
 			init();
      }
  ) 
-
-
 
 function Raindrop(x, y, dy, dropheight, dropwidth) {
 	this.x = x;
@@ -60,13 +57,12 @@ function Raindrop(x, y, dy, dropheight, dropwidth) {
 			this.y += this.dy;		
 			this.draw();
 	     }
-
  }
 	
 var rainArray = [];
 function init() {
 	rainArray = [];
-	numberOfDrops = Math.floor(innerWidth*(1/4))
+	numberOfDrops = Math.floor(innerWidth*(1/4));
  	console.log(numberOfDrops);
 	for (var i = 0; i < numberOfDrops; i++) {
 		var y = (-Math.random() * 500) - 100; //y pos
