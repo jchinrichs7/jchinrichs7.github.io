@@ -1,93 +1,181 @@
+<!DOCTYPE html>
+
 <html>
-  <head></head>
-  <body>
-    <!--
-    BEFORE RUNNING:
-    ---------------
-    1. If not already done, enable the Google Sheets API
-       and check the quota for your project at
-       https://console.developers.google.com/apis/api/sheets
-    2. Get access keys for your application. See
-       https://developers.google.com/api-client-library/javascript/start/start-js#get-access-keys-for-your-application
-    3. For additional information on authentication, see
-       https://developers.google.com/sheets/api/quickstart/js#step_2_set_up_the_sample
-    -->
-    <script>
-    function makeApiCall() {
-      var params = {
-        // The ID of the spreadsheet to retrieve data from.
-        spreadsheetId:'14Oawg9rG9MVtVMrCKTBIo3AfOsmt4HTjrTjR-35rl4I',  // TODO: Update placeholder value.
+Created by Jchinrichs7
+<p id="disp">Loading data...</p> 
 
-        // The A1 notation of the values to retrieve.
-        range: 'Sheet1',  // TODO: Update placeholder value.
+<HEAD>
+<style>
+table.GeneratedTable {
+  width: 50%;
+  background-color: #fffef9;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  color: #626262;
+}
 
-        // How values should be represented in the output.
-        // The default render option is ValueRenderOption.FORMATTED_VALUE.
-        //valueRenderOption: '',  // TODO: Update placeholder value.
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 3px;
+}
 
-        // How dates, times, and durations should be represented in the output.
-        // This is ignored if value_render_option is
-        // FORMATTED_VALUE.
-        // The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
-      //  dateTimeRenderOption: '',  // TODO: Update placeholder value.
-      };
+table.GeneratedTable thead {
+  background-color: #53a3ff;
+}
+</style>
+</HEAD>
 
-      var request = gapi.client.sheets.spreadsheets.values.get(params);
-      request.then(function(response) {
-        // TODO: Change code below to process the `response` object:
-        console.log(response.result);
-      }, function(reason) {
-        console.error('error: ' + reason.result.error.message);
-      });
-    }
+<BODY>
+	<table class="GeneratedTable">
+	  <thead>
+	    <tr>
+	      <th>TICK</th>
+	      <th>PRICE</th>
+	      <th>P/E</th>
+	      <th>CHANGE_$</th>
+	      <th>CHANGE_%</th>
+	      <th>HIGH</th>
+	      <th>LOW</th>
+	      <th>VOLUME (mil)</th>
+	      <th>VOLUME_AVG (mil)</th>
+	      <th>MKT_CAP ($bn) </th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td ID="1_1">1_1</td>
+	      <td ID="1_2">1_2</td>
+	      <td ID="1_3">1_3</td>
+	      <td ID="1_4">1_4</td>
+	      <td ID="1_5">1_5</td>
+	      <td ID="1_6">1_6</td>
+	      <td ID="1_7">1_7</td>
+	      <td ID="1_8">1_8</td>
+	      <td ID="1_9">1_9</td>
+	      <td ID="1_10">1_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="2_1">2_1</td>
+	      <td ID="2_2">2_2</td>
+	      <td ID="2_3">2_3</td>
+	      <td ID="2_4">2_4</td>
+	      <td ID="2_5">2_5</td>
+	      <td ID="2_6">2_6</td>
+	      <td ID="2_7">2_7</td>
+	      <td ID="2_8">2_8</td>
+	      <td ID="2_9">2_9</td>
+	      <td ID="2_10">2_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="3_1">3_1</td>
+	      <td ID="3_2">3_2</td>
+	      <td ID="3_3">3_3</td>
+	      <td ID="3_4">3_4</td>
+	      <td ID="3_5">3_5</td>
+	      <td ID="3_6">3_6</td>
+	      <td ID="3_7">3_7</td>
+	      <td ID="3_8">3_8</td>
+	      <td ID="3_9">3_9</td>
+	      <td ID="3_10">3_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="4_1">4_1</td>
+	      <td ID="4_2">4_2</td>
+	      <td ID="4_3">4_3</td>
+	      <td ID="4_4">4_4</td>
+	      <td ID="4_5">4_5</td>
+	      <td ID="4_6">4_6</td>
+	      <td ID="4_7">4_7</td>
+	      <td ID="4_8">4_8</td>
+	      <td ID="4_9">4_9</td>
+	      <td ID="4_10">4_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="5_1">5_1</td>
+	      <td ID="5_2">5_2</td>
+	      <td ID="5_3">5_3</td>
+	      <td ID="5_4">5_4</td>
+	      <td ID="5_5">5_5</td>
+	      <td ID="5_6">5_6</td>
+	      <td ID="5_7">5_7</td>
+	      <td ID="5_8">5_8</td>
+	      <td ID="5_9">5_9</td>
+	      <td ID="5_10">5_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="6_1">6_1</td>
+	      <td ID="6_2">6_2</td>
+	      <td ID="6_3">6_3</td>
+	      <td ID="6_4">6_4</td>
+	      <td ID="6_5">6_5</td>
+	      <td ID="6_6">6_6</td>
+	      <td ID="6_7">6_7</td>
+	      <td ID="6_8">6_8</td>
+	      <td ID="6_9">6_9</td>
+	      <td ID="6_10">6_10</td>
+	    </tr>
+	    <tr>
+	      <td ID="7_1">7_1</td>
+	      <td ID="7_2">7_2</td>
+	      <td ID="7_3">7_3</td>
+	      <td ID="7_4">7_4</td>
+	      <td ID="7_5">7_5</td>
+	      <td ID="7_6">7_6</td>
+	      <td ID="7_7">7_7</td>
+	      <td ID="7_8">7_8</td>
+	      <td ID="7_9">7_9</td>
+	      <td ID="7_10">7_10</td>
+	    </tr>
+	  </tbody>
+	</table>
+</BODY>
 
-    function initClient() {
-      var API_KEY = 'AIzaSyCbD6Xvr0M9Lb3Vgse5WNG_HnG9TMBs_90';  // TODO: Update placeholder with desired API key.
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>    
+//var link = 'https://docs.google.com/spreadsheets/d/1sbyMINQHPsJctjAtMW0lCfLrcpMqoGMOJj6AN-sNQrc/pubhtml';
 
-      var CLIENT_ID = '1043785912590-i1pjjs124u3cudevbsoj34qntka1ullt.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+//DO NOT USE MULTIPLE SHEETS IN THE SAME GS OR THIS WILL NOT WORK
 
-      // TODO: Authorize using one of the following scopes:
-      //   'https://www.googleapis.com/auth/drive'
-      //   'https://www.googleapis.com/auth/drive.file'
-      //   'https://www.googleapis.com/auth/drive.readonly'
-      //   'https://www.googleapis.com/auth/spreadsheets'
-      //   'https://www.googleapis.com/auth/spreadsheets.readonly'
-      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+window.addEventListener('DOMContentLoaded', init);
+var five_minutes = 5*60000;
+window.setInterval(init, five_minutes); 
 
-      gapi.client.init({
-        'apiKey': API_KEY,
-        'clientId': CLIENT_ID,
-        'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-      }).then(function() {
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-      });
-    }
 
-    function handleClientLoad() {
-      gapi.load('client:auth2', initClient);
-    }
+  function init() {
+    Tabletop.init( { key: '14Oawg9rG9MVtVMrCKTBIo3AfOsmt4HTjrTjR-35rl4I',
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
 
-    function updateSignInStatus(isSignedIn) {
-      if (isSignedIn) {
-        makeApiCall();
-      }
-    }
+  	function showInfo(data, tabletop) { 
+  	console.log('refreshed');
+    console.log(data);
+    document.getElementById("disp").innerHTML = "Last Updated: " + data[0].time + " CST";
 
-    function handleSignInClick(event) {
-      gapi.auth2.getAuthInstance().signIn();
-    }
+    terms = ["tick", "price", "pe", "change", "changepctday", "high", "low","volume","volumeavg", "marketcap"];
+   
+    
+    let element_exists;
+    for (let row = 0; row < data.length; row++) {
+   		 for (let col = 1; col <= terms.length; col++) { 
+    		prop = terms[col-1];
+    		current_id = row + "_" + col;
 
-    function handleSignOutClick(event) {
-      gapi.auth2.getAuthInstance().signOut();
-    }
-    </script>
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-    <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
-    <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
-  </body>
+    		element_exists = document.getElementById(String(current_id));
+    		if(element_exists) {
+    			document.getElementById(String(current_id)).innerHTML = data[row-1][prop]; 
+    		}
+		}
+	}
+
+
+  }
+
+</script>
 </html>
+
+
